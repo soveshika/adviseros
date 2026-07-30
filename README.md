@@ -44,3 +44,95 @@ Built as a real-world portfolio project in collaboration with an active UK finan
 ---
 
 ## 📁 Project Structure
+
+```
+adviseros/
+├── adviseros/               # FastAPI backend
+│   ├── app/
+│   │   ├── main.py          # API entry point
+│   │   ├── core/            # Config and database setup
+│   │   ├── models/          # Database models
+│   │   ├── routers/         # API route definitions
+│   │   ├── schemas/         # Pydantic schemas
+│   │   └── services/        # Business logic (analysis, PDF generation)
+│   ├── alembic/              # Database migrations
+│   └── requirements.txt
+├── adviseros-frontend/       # React frontend
+│   ├── src/
+│   │   ├── App.js
+│   │   ├── Dashboard.jsx
+│   │   └── ClientProfileWizard.jsx
+│   └── package.json
+├── ai engine/                # AI analysis logic
+│   ├── main.py
+│   ├── analysis.py
+│   └── requirements.txt
+└── start-adviseros.sh         # Script to run the full stack locally
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.11+
+- Node.js 18+
+- PostgreSQL
+- Anthropic API key
+
+### Installation
+
+**1. Clone the repo**
+```bash
+git clone https://github.com/soveshika/adviseros.git
+cd adviseros
+```
+
+**2. Set up the backend**
+```bash
+cd adviseros
+pip install -r requirements.txt
+cp .env.example .env  # Add your DB credentials and Anthropic API key
+uvicorn app.main:app --reload
+```
+
+**3. Set up the frontend**
+```bash
+cd adviseros-frontend
+npm install
+npm start
+```
+
+**4. Or run everything at once**
+```bash
+chmod +x start-adviseros.sh
+./start-adviseros.sh
+```
+
+---
+
+## 📸 Demo
+
+> Live demo available upon request — contact via GitHub or LinkedIn.
+
+---
+
+## 🎯 Why I Built This
+
+I'm transitioning from a Civil Engineering and Business Management background into AI Engineering. AdviserOS is my flagship portfolio project — demonstrating that I can build production-grade, full-stack AI applications that solve real business problems.
+
+The platform was built in response to a real brief from a UK financial adviser with 40 years of experience, making it far more than just a coding exercise.
+
+---
+
+## 👤 Author
+
+**Sonu** — AI Engineer in Training  
+📍 London, UK  
+🔗 [GitHub: soveshika](https://github.com/soveshika)
+
+---
+
+## 📄 Licence
+
+This project is licensed under the MIT Licence — see the [LICENSE](LICENSE) file for details.
