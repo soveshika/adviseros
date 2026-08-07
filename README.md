@@ -13,6 +13,9 @@
 
 ## 📌 Overview
 
+📖 See [EXPLANATION.md](EXPLANATION.md) for how this works and what's still stubbed.
+
+
 AdviserOS is a full-stack SaaS-style platform that automates the financial advisory workflow. It collects client data through a guided onboarding process, runs an AI analysis of the client's financial situation, and generates a professional PDF suitability report — all in one seamless experience.
 
 Built as a real-world portfolio project in collaboration with an active UK financial adviser, this platform reflects genuine industry requirements rather than a toy demo.
